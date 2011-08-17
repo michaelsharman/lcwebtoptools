@@ -151,7 +151,7 @@
 	</cfquery>
 
 	<h3>Friendly URL</h3>
-	<p><a href="customadmin.cfm?module=contentobjectmeta.cfm">&lt;&lt; Search again</a></p>
+	<p><a href="customadmin.cfm?module=contentobjectmeta.cfm&plugin=lcwebtoptools">&lt;&lt; Search again</a></p>
 	<cfif qFU.recordCount>
 		<p>We found the following friendly URL records which may match what you're looking for, click an objectId to find more information:</p>
 		<table class="tbldata">
