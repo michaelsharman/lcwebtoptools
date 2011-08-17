@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<webtop>
+	<section mergeType="merge" id="admin" sequence="4100" permission="MainNavAdminTab" label="Admin" icon="config" description="administration/utility tools">
+		<subsection id="learnosity" sequence="10000" label="Webtop Tools" permission="AdminGeneralTab">
+			<menu sequence="10" id="lcwebtoptools" label="Webtop Tools" labelType="value">
+				<menuitem id="meta" sequence="1" label="Content Object Meta" link="/admin/customadmin.cfm?module=contentobjectmeta.cfm&amp;plugin=lcwebtoptools" />
+				<menuitem id="diff" sequence="2" label="FarCry/MySQL Diff" link="/admin/customadmin.cfm?module=databasediff.cfm&amp;plugin=lcwebtoptools" />
+			</menu>
+		</subsection>
+	</section>
+</webtop>

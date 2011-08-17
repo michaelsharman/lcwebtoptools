@@ -1,0 +1,34 @@
+Introduction
+-------------------------------
+
+This FarCry plugin contains tools to assist you in debugging a typical FarCry project. Currently there is a:
+ - Database Diff
+ - Content Object Meta
+
+The database diff looks for case-sensitivity differences between your ColdFusion components and the actual MySQL table names (MySQL only)
+
+The Content Object Meta assists in finding information about content of any "type" in FarCry, based of the title, objectId or friendly URL
+
+
+Requirements
+-------------------------------
+
+This was built on
+
+    Railo 3.2+
+    ColdFusion 7+
+    FarCry 6+
+    MySQL 5+
+
+
+Installation
+-------------------------------
+
+"Official" notes on installing FarCry plugins can be found here: https://farcry.jira.com/wiki/pages/viewpage.action?pageId=12943398
+
+It's pretty simple though:
+ - add the "lcwebtoptools" directory from git into /farcry/plugins/
+ - add "lcwebtoptools" to THIS.plugins in farcryConstructor.cfm (in your project webroot)
+	e.g. <cfset THIS.plugins = "farcrycms,lcwebtoptools">
+
+Restart your app, that's it. No coapi changes need to be made. To access the current tools, go to the "Admin" tab and choose "Webtop Tools" from the drop down.
